@@ -1,0 +1,45 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "AdfDevVbXIProject"
+		},
+		"LS_Adls_SQL_parquet_accountKey": {
+			"value": ""
+		},
+		"LS_ONPREM_SQLServer_DW_password": {
+			"value": ""
+		},
+		"LS_Parent_Sqlserver_DW_password": {
+			"value": ""
+		},
+		"LS_Adls_SQL_parquet_properties_typeProperties_url": {
+			"value": "https://adlsdevvbxiproject.dfs.core.windows.net"
+		},
+		"LS_ONPREM_SQLServer_DW_properties_typeProperties_server": {
+			"value": "LAPTOP-MUDU581E\\SQLEXPRESS"
+		},
+		"LS_ONPREM_SQLServer_DW_properties_typeProperties_database": {
+			"value": "RetailDW_Dev"
+		},
+		"LS_ONPREM_SQLServer_DW_properties_typeProperties_userName": {
+			"value": "mani"
+		},
+		"LS_Parent_Sqlserver_DW_properties_typeProperties_server": {
+			"value": "LAPTOP-MUDU581E\\SQLEXPRESS"
+		},
+		"LS_Parent_Sqlserver_DW_properties_typeProperties_database": {
+			"value": "RetailDW_Dev"
+		},
+		"LS_Parent_Sqlserver_DW_properties_typeProperties_userName": {
+			"value": "mani"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
