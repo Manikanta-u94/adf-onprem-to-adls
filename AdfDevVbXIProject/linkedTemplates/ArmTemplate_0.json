@@ -333,7 +333,8 @@
 									"schemaname": {
 										"value": "@pipeline().parameters.TableSchema",
 										"type": "Expression"
-									}
+									},
+									"tablename": "@dataset().tablename"
 								}
 							},
 							"firstRowOnly": true
@@ -406,7 +407,8 @@
 												"schemaname": {
 													"value": "@pipeline().parameters.TableSchema",
 													"type": "Expression"
-												}
+												},
+												"tablename": "@dataset().tablename"
 											}
 										}
 									],
@@ -444,7 +446,20 @@
 											"type": "PipelineReference"
 										},
 										"waitOnCompletion": true,
-										"parameters": {}
+										"parameters": {
+											"TableSchema": {
+												"value": "@pipeline().parameters.TableSchema",
+												"type": "Expression"
+											},
+											"TableName": {
+												"value": "@pipeline().parameters.TableName",
+												"type": "Expression"
+											},
+											"WatermarkColumn": {
+												"value": "@pipeline().parameters.WatermarkColumn",
+												"type": "Expression"
+											}
+										}
 									}
 								}
 							]
